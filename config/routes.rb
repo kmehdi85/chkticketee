@@ -1,5 +1,8 @@
 Chkticketee::Application.routes.draw do
   resources :purchases
+  resources :projects
+  root :to => "projects#index"
+
 
 
   # The priority is based upon order of creation:
